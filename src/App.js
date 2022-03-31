@@ -35,7 +35,7 @@ function App() {
     const savedNotes = JSON.parse(localStorage.getItem("react-notes-app-data"));
 
     if (savedNotes) {
-      setNotes(savedNotes)
+      setNotes(savedNotes);
     }
   }, []);
 
@@ -45,12 +45,12 @@ function App() {
 
   const addNote = (text) => {
     const date = new Date();
-    const time = new Date()
+    const time = new Date();
     const newNote = {
       is: nanoid(),
       text: text,
       date: date.toLocaleDateString(),
-      time: time.toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'})
+      time: time.toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" }),
     };
     const newNotes = [...notes, newNote];
     setNotes(newNotes);
@@ -64,15 +64,13 @@ function App() {
     <div className={`${darkMode && "dark-mode"}`}>
       <div className="container p-3">
         <Header handleToggleDarkMode={setDarkMode} />
-        <Search handleSearchNote={setSearchText}  
-                handleToggleDarkMode={setDarkMode} />
+        <Search handleSearchNote={setSearchText} />
         <NotesList
           notes={notes.filter((note) =>
             note.text.toLowerCase().includes(searchText)
           )}
           handleAddNote={addNote}
           handleDeleteNote={deleteNote}
-          handleToggleDarkMode={setDarkMode}
         />
       </div>
     </div>

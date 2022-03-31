@@ -1,22 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400&display=swap");
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: "Montserrat", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
-
-.header{
+.header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-
 }
 
 .dark-mode {
@@ -44,7 +38,6 @@ code {
 
 .note.new {
   background-color: #a70c0c28;
- 
 }
 
 textarea {
@@ -53,10 +46,9 @@ textarea {
   background-color: #333;
   margin-bottom: 8px;
   color: rgb(255, 255, 255);
-
 }
 
-textarea:focus{
+textarea:focus {
   outline: none;
 }
 
@@ -69,8 +61,8 @@ textarea:focus{
 }
 
 .save:hover {
-    background-color: rgb(72, 145, 255);
-    color: white;
+  background-color: rgb(72, 145, 255);
+  color: white;
 }
 
 .note {
@@ -82,14 +74,12 @@ textarea:focus{
   flex-direction: column;
   justify-content: space-between;
   white-space: pre-wrap;
-
 }
 
 .note-footer {
   display: flex;
   align-items: center;
   justify-content: space-between;
-
 }
 
 .delete-icon {
@@ -99,18 +89,12 @@ textarea:focus{
 .search {
   display: flex;
   align-items: center;
- 
+
   border-radius: 10px;
   padding: 5px;
   margin-bottom: 1.5em;
 }
 
-
-
-
 .search input:focus {
   outline: none;
 }
-
-
-
