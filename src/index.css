@@ -11,3 +11,106 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+.dark-mode {
+  background-color: #333;
+}
+
+.dark-mode h1 {
+  color: white;
+}
+
+.container {
+  max-width: 960px;
+  min-height: 100vh;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.notes-list {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.note.new {
+  background-color: #a70c0c28;
+ 
+}
+
+textarea {
+  border: none;
+  resize: none;
+  background-color: #333;
+  margin-bottom: 8px;
+  color: rgb(255, 255, 255);
+
+}
+
+textarea:focus{
+  outline: none;
+}
+
+.save {
+  background-color: rgb(212, 209, 209);
+  border: none;
+  border-radius: 3px;
+  padding: 5px 10px 5px 10px;
+  cursor: pointer;
+}
+
+.save:hover {
+    background-color: rgb(72, 145, 255);
+    color: white;
+}
+
+.note {
+  background-color: #fef68a;
+  border-radius: 10px;
+  padding: 1rem;
+  min-height: 170px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  white-space: pre-wrap;
+
+}
+
+.note-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+.delete-icon {
+  cursor: pointer;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+ 
+  border-radius: 10px;
+  padding: 5px;
+  margin-bottom: 1.5em;
+}
+
+
+
+
+.search input:focus {
+  outline: none;
+}
+
+
+
